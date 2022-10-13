@@ -3,3 +3,5 @@ super_confidential/
 
 .gitconfig
 .DS_Store
+
+.oh-my-zsh/
