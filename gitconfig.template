@@ -1,0 +1,22 @@
+[includeIf "gitdir:~/repositories/dir1/"]
+  path = ~/repositories/.git1
+[includeIf "gitdir:~/repositories/dir2/"]
+  path = ~/repositories/.git2 
+[includeIf "gitdir:~/repositories/dir3/"]
+  path = ~/repositories/.git3
+
+
+[user]
+	name = Dream Terminal
+	email = dream@terminal.io
+[pull]
+	rebase = false
+[init]
+	defaultBranch = development
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[push]
+	autoSetupRemote = true
