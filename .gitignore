@@ -1,0 +1,4 @@
+# Ignore super confidential stuff
+super_confidential/
+
+.DS_Store
