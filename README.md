@@ -18,6 +18,10 @@ rm $HOME/.oh-my-zsh
 rm $HOME/.p10k.zsh
 rm $HOME/.vim
 rm $HOME/.vimrc
+
+rm $HOME/.config/kitty/color.conf
+rm $HOME/.config/kitty/keymaps.conf
+rm $HOME/.config/kitty/kitty.conf
 ```
 
 > *REMEMBER* if you have one of this file in other places just keep the path and use it in the next step to create the symbolic link for **Dream Terminal**
@@ -31,6 +35,10 @@ ln -s $HOME/.dream-terminal/zsh/.oh-my-zsh $HOME/.oh-my-zsh
 ln -s $HOME/.dream-terminal/zsh/p10k.zsh $HOME/.p10k.zsh
 ln -s $HOME/.dream-terminal/vim/vim $HOME/.vim
 ln -s $HOME/.dream-terminal/vim/vimrc $HOME/.vimrc
+
+ln -s $HOME/.dream-terminal/kitty/color.conf $HOME/.config/kitty/color.conf
+ln -s $HOME/.dream-terminal/kitty/keymaps.conf $HOME/.config/kitty/keymaps.conf
+ln -s $HOME/.dream-terminal/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
 ```
 
 #### Tools 🛠
