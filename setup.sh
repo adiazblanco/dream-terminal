@@ -120,8 +120,8 @@ setup(){
 
     echo "===Copying files and creating symblinks==="
 
-    mkdir zsh/super_confidential2/
-    touch zsh/super_confidential2/private.sh
+    mkdir zsh/super_confidential/
+    touch zsh/super_confidential/private.sh
 
     cp gitconfig.template .gitconfig
     mkdir zsh/.oh-my-zsh
