@@ -6,7 +6,7 @@ First clone de repo, on your $HOME directory and name de folder '.dream_terminal
 
 > This is the directory that's been used on setup.sh script to install all the configuration files on your computer 
 
-If you wanna install all the confiration files manually please ==follow the manual installation guide== ✍🏽
+If you wanna install all the confiration files manually please *follow the manual installation guide* ✍🏽
 
 ### Manual installation guide ⛏
 Down below are a list of all the tools that we are using on **Dream terminal**, feel free to install each other that you wanna use. Now, we will continue with a list of files that we need to replace with the **Drem Terminal** Setup.
@@ -20,7 +20,7 @@ rm $HOME/.vim
 rm $HOME/.vimrc
 ```
 
-> ==REMEMBER== if you have one of this file in other place just keep de path and use it in the next step to create the symbolic link for **Dream Terminal**
+> *REMEMBER* if you have one of this file in other place just keep de path and use it in the next step to create the symbolic link for **Dream Terminal**
 
 Ok, we're almost done tho finish this setup do no forget to create this simbolic link and **Dream Terminal** is on line.
 
