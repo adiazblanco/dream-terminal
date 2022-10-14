@@ -2,14 +2,14 @@
 **Dream terminal** is a stack of configuration files created to customize zsh and every software dependency that maybe be on your daily tasks.
 
 ## Installation Guide 📝
-First clone de repo, on your $HOME directory and name de folder '.dream_terminal'
+First clone de repo, on your $HOME directory and name de folder '.dream-terminal'
 
 > This is the directory that's been used on setup.sh script to install all the configuration files on your computer 
 
 If you wanna install all the confiration files manually please *follow the manual installation guide* ✍🏽
 
 ### Manual installation guide ⛏
-Down below are a list of all the tools that we are using on **Dream terminal**, feel free to install each other that you wanna use. Now, we will continue with a list of files that we need to replace with the **Drem Terminal** Setup.
+Down below are a list of all the tools that we are using on **Dream terminal**, feel free to install each other that you wanna use. Now, we will continue with a list of files that we need to replace with the **Dream Terminal** Setup.
 
 ```console
 rm $HOME/.zshrc
@@ -53,3 +53,7 @@ ln -s $HOME/.dream-terminal/vim/vimrc $HOME/.vimrc
 |[coreutils](https://formulae.brew.sh/formula/coreutils#default)|
 |[scrub](https://formulae.brew.sh/formula/scrub#default)|
 |[wget](https://formulae.brew.sh/formula/wget#default)|
+
+# ONE MORE THING
+
+If you want to use neovim like an IDE like having autocompletion and highlighting on reserved words in your favorite programing language i invite you to use [NVCHAD](https://nvchad.netlify.app/getting-started/setup)🤩
