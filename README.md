@@ -2,14 +2,14 @@
 **Dream terminal** is a stack of configuration files created to customize zsh and every software dependency that maybe be on your daily tasks.
 
 ## Installation Guide 📝
-First clone de repo, on your $HOME directory and name de folder '.dream-terminal'
+First clone de repo, on your $HOME directory and name de folder '.dream-terminal'.
 
-> This is the directory that's been used on setup.sh script to install all the configuration files on your computer 
+> This is the directory that's been used on setup.sh script to install all the configuration files on your computer. 
 
-If you wanna install all the confiration files manually please *follow the manual installation guide* ✍🏽
+If you wanna install all the confirmation files manually please *follow the manual installation guide*. ✍
 
 ### Manual installation guide ⛏
-Down below are a list of all the tools that we are using on **Dream terminal**, feel free to install each other that you wanna use. Now, we will continue with a list of files that we need to replace with the **Dream Terminal** Setup.
+Down below is a list of all the tools that we are using on **Dream Terminal**, feel free to install each other that you wanna use. Now, we will continue with a list of files that we need to replace with the **Dream Terminal** Setup.
 
 ```console
 rm $HOME/.zshrc
@@ -20,9 +20,9 @@ rm $HOME/.vim
 rm $HOME/.vimrc
 ```
 
-> *REMEMBER* if you have one of this file in other place just keep de path and use it in the next step to create the symbolic link for **Dream Terminal**
+> *REMEMBER* if you have one of this file in other places just keep the path and use it in the next step to create the symbolic link for **Dream Terminal**
 
-Ok, we're almost done tho finish this setup do no forget to create this simbolic link and **Dream Terminal** is on line.
+Ok, we're almost done tho finish this setup do not forget to create this symbolic link, and **Dream Terminal** is online.
 
 ```console
 ln -s $HOME/.dream-terminal/zsh/zshrc $HOME/.zshrc
@@ -56,4 +56,4 @@ ln -s $HOME/.dream-terminal/vim/vimrc $HOME/.vimrc
 
 # ONE MORE THING
 
-If you want to use neovim like an IDE like having autocompletion and highlighting on reserved words in your favorite programing language i invite you to use [NVCHAD](https://nvchad.netlify.app/getting-started/setup)🤩
+If you want to use neovim like an IDE like having autocompletion and highlighting on reserved words in your favorite programing language I invite you to use [NVCHAD](https://nvchad.netlify.app/getting-started/setup)🤩
