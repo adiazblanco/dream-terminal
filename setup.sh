@@ -96,6 +96,9 @@ installmisc(){
         echo "Install wget...."
         brew install wget
 
+        echo "Install starship...."
+        brew install starship
+
     elif [ "$i" = "n" ];
     then
         echo "Follow de readme.md"
@@ -142,6 +145,9 @@ setup(){
     rm $HOME/.vimrc
     ln -s $HOME/.dream-terminal/vim/vim $HOME/.vim
     ln -s $HOME/.dream-terminal/vim/vimrc $HOME/.vimrc
+
+    rm $HOME/.config/starship.toml
+    ln -s $HOME/.dream-terminal/starship/starship.toml $HOME/.config/starship.toml
 
     chsh -s `which zsh`
     source $HOME/.zshrc

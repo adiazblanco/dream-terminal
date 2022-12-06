@@ -22,6 +22,7 @@ rm $HOME/.vimrc
 rm $HOME/.config/kitty/color.conf
 rm $HOME/.config/kitty/keymaps.conf
 rm $HOME/.config/kitty/kitty.conf
+rm $HOME/.config/starship.toml
 ```
 
 > *REMEMBER* if you have one of this file in other places just keep the path and use it in the next step to create the symbolic link for **Dream Terminal**
@@ -39,6 +40,8 @@ ln -s $HOME/.dream-terminal/vim/vimrc $HOME/.vimrc
 ln -s $HOME/.dream-terminal/kitty/color.conf $HOME/.config/kitty/color.conf
 ln -s $HOME/.dream-terminal/kitty/keymaps.conf $HOME/.config/kitty/keymaps.conf
 ln -s $HOME/.dream-terminal/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
+
+ln -s $HOME/.dream-terminal/starship/starship.toml $HOME/.config/starship.toml
 ```
 
 #### Tools 🛠
@@ -61,6 +64,7 @@ ln -s $HOME/.dream-terminal/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
 |[coreutils](https://formulae.brew.sh/formula/coreutils#default)|
 |[scrub](https://formulae.brew.sh/formula/scrub#default)|
 |[wget](https://formulae.brew.sh/formula/wget#default)|
+|[starship](https://starship.rs/guide/#%F0%9F%9A%80-installation)|
 
 # ONE MORE THING
 
@@ -71,3 +75,4 @@ If you want to use neovim like an IDE like having autocompletion and highlightin
 - MacOS Terminal
 - iTerm2
 - Kitty Terminal
+- Warp Terminal
