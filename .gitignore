@@ -4,4 +4,5 @@ super_confidential/
 .gitconfig
 .DS_Store
 
+dotfiles/
 .oh-my-zsh/
