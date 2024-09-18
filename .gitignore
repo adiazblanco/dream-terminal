@@ -4,4 +4,11 @@ super_confidential/
 .gitconfig
 .DS_Store
 
+dotfiles/shell/zsh/.zim/modules
+dotfiles/modules
+dotfiles/symlinks
+dotfiles/scripts
+dotfiles/os
+dotfiles/restoration_scripts
+dotfiles/bin
 .oh-my-zsh/
