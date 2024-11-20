@@ -32,3 +32,42 @@ function rmk() {
     gshred -zun 10 -v $1 # MAC
     #shred -zun 10 -v $1 # LINUX
 }
+
+function install() {
+
+    # Verificar si existe package.json en el directorio actual
+    if [ -f "package.json" ]; then
+        echo "Proyectos de Node.js detectado."
+        
+        if [ -f "pnpm-lock.yaml" ]; then
+            pnpm install
+        elif [ -f "yarn.lock" ]; then
+            yarn install
+        elif [ -f "package-lock.json" ]; then
+            npm install
+        elif [ -f "bun.lockb" ]; then
+            bun install
+        elif [ -f "bower.json" ]; then
+            bower install
+        elif [ -f "jspm.config.js" ] || [ -f "jspm.browser.js" ] || [ -d "jspm_packages" ]; then
+            jspm install
+        elif [ -d ".meteor" ]; then
+            meteor npm install
+        elif [ -f "rush.json" ]; then
+            rush install
+        elif [ -f "lerna.json" ]; then
+            lerna bootstrap
+        elif [ -f "deno.json" ] || [ -f "deno.jsonc" ]; then
+            deno cache
+        else
+            echo "No se encontró ningún archivo de lock o configuración compatible."
+            echo "Ejecutando gestor de paquetes por defecto PNPM."
+            
+            pnpm install
+        fi
+    fi
+
+}
+
+alias i="install"
+

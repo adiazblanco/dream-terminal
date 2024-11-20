@@ -72,3 +72,6 @@ nvm_initialize
 eval "$(starship init zsh)"
 
 echo "[ Carga ZSH Completada desde: $HOME/.zshrc ]"
+eval "$(gh copilot alias -- zsh)"
+
+PATH=~/.console-ninja/.bin:$PATH
