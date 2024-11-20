@@ -65,6 +65,20 @@ function install() {
             
             pnpm install
         fi
+    # Verificar si existe pom.xml en el directorio actual (Java con Maven)
+    elif [ -f "pom.xml" ]; then
+        echo "Proyecto de Java con Maven detectado."
+        mvn install
+    # Verificar si existe build.gradle o build.gradle.kts (Java con Gradle)
+    elif [ -f "build.gradle" ] || [ -f "build.gradle.kts" ]; then
+        echo "Proyecto de Java con Gradle detectado."
+        gradle build
+    # Verificar si existe un archivo .csproj o .sln (Proyectos .NET)
+    elif ls *.csproj 1> /dev/null 2>&1 || ls *.sln 1> /dev/null 2>&1; then
+        echo "Proyecto .NET detectado."
+        dotnet restore
+    else
+        echo "No se detectó un proyecto compatible para instalar dependencias."
     fi
 
 }
