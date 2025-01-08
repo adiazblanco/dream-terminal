@@ -10,7 +10,6 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export RBENV_ROOT="$(brew --prefix rbenv)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
-export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 
 #Maven setup
 export PATH="$HOME/.development/apache-maven/bin:$PATH"
@@ -61,3 +60,39 @@ if [ -f '/Users/adiaz/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/adiaz/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/adiaz/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# bun completions
+[ -s "/Users/adiaz/.bun/_bun" ] && source "/Users/adiaz/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/adiaz/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+#GPG
+export GPG_TTY=$(tty)
+
+#Docker
+export PATH=$PATH:~/.docker/bin
+
+# pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init --path)"; fi
+
+# .NET
+# Add .NET Core SDK tools
+export PATH="$PATH:/Users/adiaz/.dotnet/tools"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+nvm_initialize() {
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+}
+nvm_initialize

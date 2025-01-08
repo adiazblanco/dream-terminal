@@ -7,13 +7,14 @@ alias java8="export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-8.jdk/Co
 alias corretto17="export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home"
 alias zulu17="export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 # Enable my default Java versions
-corretto17
+zulu17
 
 # Git custom commands
 alias git-tree="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches"
 
 # Replace vim with NVIM
 alias vim="nvim"
+alias vi="vim"
 
 # cat commnad replacement with bat
 alias cat="bat"

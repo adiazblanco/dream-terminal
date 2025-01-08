@@ -76,3 +76,8 @@ If you want to use neovim like an IDE like having autocompletion and highlightin
 - iTerm2
 - Kitty Terminal
 - Warp Terminal
+
+# NIX
+
+## NIX Darwin
+ - [NIX-Darwin](https://github.com/LnL7/nix-darwin?tab=readme-ov-file)
